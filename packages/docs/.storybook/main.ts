@@ -24,6 +24,13 @@ const config: StorybookConfig = {
     name: getAbsolutePath("@storybook/react-vite"),
     options: {},
   },
+  viteFinal: (config, { configType }) => {
+    if(configType === 'PRODUCTION'){
+      config.base = '/rocketseat-design-system'
+    }
+
+    return config
+  },
   previewHead: (head) => `
   ${head}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
