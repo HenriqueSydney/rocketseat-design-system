@@ -1,5 +1,11 @@
 # @henrique-ui/react
 
+## 2.1.1
+
+### Patch Changes
+
+- Add option to pass reference to text input and adjust some styles
+
 ## 2.1.0
 
 ### Minor Changes
